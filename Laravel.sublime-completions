@@ -1,0 +1,25 @@
+{
+	"scope": "source.php",
+
+	"completions": [
+
+		// Routes
+		{ "trigger": "Laravel: Route::group", "contents": "Route::group([${1:attributes}], ${2:function()\n\\{\n\t$0\n\\}});" },
+		{ "trigger": "Laravel: Route::any", "contents": "Route::any('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::any (closure)", "contents": "Route::any('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+		{ "trigger": "Laravel: Route::get", "contents": "Route::get('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::get (closure)", "contents": "Route::get('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+		{ "trigger": "Laravel: Route::post", "contents": "Route::post('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::post (closure)", "contents": "Route::post('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+		{ "trigger": "Laravel: Route::put", "contents": "Route::put('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::put (closure)", "contents": "Route::put('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+		{ "trigger": "Laravel: Route::patch", "contents": "Route::patch('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::patch (closure)", "contents": "Route::patch('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+		{ "trigger": "Laravel: Route::delete", "contents": "Route::delete('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
+		{ "trigger": "Laravel: Route::delete (closure)", "contents": "Route::delete('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
+
+		// Filter
+		{ "trigger": "Laravel: after", "contents": "after('${1:path}')" },
+		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" }
+	]
+}
