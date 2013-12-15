@@ -4,7 +4,7 @@
 	"completions": [
 
 		// Routes
-		{ "trigger": "Laravel: Route::group", "contents": "Route::group([${1:attributes}], ${2:function()\n\\{\n\t$0\n\\}});" },
+		{ "trigger": "Laravel: Route::group", "contents": "Route::group(['${1:prefix|before|after}' => '${2:value}'], function()\n\\{\n\t$0\n\\});" },
 		{ "trigger": "Laravel: Route::resource", "contents": "Route::resource('${1:path}', '${2:Name}Controller'${3:, ['${4:except|only}' => ['${5:index}']]});" },
 		{ "trigger": "Laravel: Route::any", "contents": "Route::any('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
 		{ "trigger": "Laravel: Route::any (closure)", "contents": "Route::any('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
