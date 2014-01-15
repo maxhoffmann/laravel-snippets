@@ -19,6 +19,21 @@
 		{ "trigger": "Laravel: Route::delete", "contents": "Route::delete('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
 		{ "trigger": "Laravel: Route::delete (closure)", "contents": "Route::delete('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
 
+		// Form
+		{ "trigger": "Laravel: Form::open", "contents": "Form::open(${1/(?:.+)/[/g}${1:options}${1/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::model", "contents": "Form::model(${1:\\$model}${2/(?:.+)/, [/g}${2:options}${2/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::label", "contents": "Form::label('${1:field}'${2/(?:.+)/, '/g}${2:label}${2/(?:.+)/'/g}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::text", "contents": "Form::text('${1:name}'${2/(?:.+)/, '/g}${2:value}${3/(?:.+)/, [/g}${2/(?:.+)/'/g}${3:attributes}${3/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::password", "contents": "Form::password('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::checkbox", "contents": "Form::checkbox('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, /g}${3:true}${4/(?:.+)/, [/g}${4:attributes}${4/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::radio", "contents": "Form::radio('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, /g}${3:true}${4/(?:.+)/, [/g}${4:attributes}${4/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::file", "contents": "Form::file('${1:name}'${2/(?:.+)/, [/g}${2:attributes}${2/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::select", "contents": "Form::select('${1:name}'${2/(?:.+)/, [/g}${2:options}${2/(?:.+)/]/g}${3/(?:.+)/, '/g}${3:selected}${3/(?:.+)/'/g}${4/(?:.+)/, [/g}${4:attributes}${4/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::selectRange", "contents": "Form::selectRange('${1:name}'${2/(?:.+)/, /g}${2:min}${3/(?:.+)/, /g}${3:max}${4/(?:.+)/, '/g}${4:selected}${4/(?:.+)/'/g}${5/(?:.+)/, [/g}${5:attributes}${5/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::selectMonth", "contents": "Form::selectMonth('${1:name}'${2/(?:.+)/, /g}${2:1-12}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::button", "contents": "Form::button('${1:label}'${2/(?:.+)/, [/g}${2:attributes}${2/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::submit", "contents": "Form::submit('${1:label}'${2/(?:.+)/, [/g}${2:attributes}${2/(?:.+)/]/g})" },
+
 		// Filter
 		{ "trigger": "Laravel: after", "contents": "after('${1:path}')" },
 		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" }
