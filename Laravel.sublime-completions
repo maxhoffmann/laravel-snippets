@@ -19,6 +19,10 @@
 		{ "trigger": "Laravel: Route::delete", "contents": "Route::delete('${1:path}', [${2/(?:.+)/'as' => '/g}${2:name}${2/(?:.+)/', /g}'uses' => '${3:Name}Controller@${4:method}'$5]);" },
 		{ "trigger": "Laravel: Route::delete (closure)", "contents": "Route::delete('${1:path}', ${2/(?:.+)/[/g}${2:attributes}${2/(?:.+)/, /g}function($3)\n\\{\n\t$0\n\\}${2/(?:.+)/]/g});" },
 
+		// View
+		{ "trigger": "Laravel: View::make", "contents": "View::make('${1:view}'${2/(?:.+)/, [/g}${2:data}${2/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: with (View)", "contents": "->with('${1:key}', ${2:value})" },
+
 		// Form
 		{ "trigger": "Laravel: Form::open", "contents": "Form::open(${1/(?:.+)/[/g}${1:options}${1/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::model", "contents": "Form::model(${1:\\$model}${2/(?:.+)/, [/g}${2:options}${2/(?:.+)/]/g})" },
