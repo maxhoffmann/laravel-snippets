@@ -40,6 +40,10 @@
 
 		// Filter
 		{ "trigger": "Laravel: after", "contents": "after('${1:path}')" },
-		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" }
+		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" },
+
+		// Helpers
+		{ "trigger": "Laravel: dd", "contents": "dd($1);" }
+
 	]
 }
