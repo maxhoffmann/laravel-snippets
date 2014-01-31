@@ -25,7 +25,7 @@
 
 		// View
 		{ "trigger": "Laravel: View::make", "contents": "View::make('${1:view}'${2/(?:.+)/, [/g}${2:data}${2/(?:.+)/]/g})" },
-		{ "trigger": "Laravel: with (View)", "contents": "->with('${1:key}', ${2:value})" },
+		{ "trigger": "Laravel: with (View)", "contents": "with('${1:key}', ${2:value})" },
 
 		// Form
 		{ "trigger": "Laravel: Form::open", "contents": "Form::open(${1/(?:.+)/[/g}${1:options}${1/(?:.+)/]/g})" },
