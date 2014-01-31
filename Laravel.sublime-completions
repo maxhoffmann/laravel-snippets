@@ -42,9 +42,6 @@
 		{ "trigger": "Laravel: Form::button", "contents": "Form::button('${1:label}'${2/(?:.+)/, [/g}${2:attributes}${2/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::submit", "contents": "Form::submit('${1:label}'${2/(?:.+)/, [/g}${2:attributes}${2/(?:.+)/]/g})" },
 
-		// Filter
-		{ "trigger": "Laravel: after", "contents": "after('${1:path}')" },
-		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" },
 		// DB
 		{ "trigger": "Laravel: DB::getQueryLog", "contents": "DB::getQueryLog()" },
 
