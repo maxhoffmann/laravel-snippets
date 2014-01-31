@@ -90,6 +90,13 @@
 		{ "trigger": "Laravel: where (operator)", "contents": "where('${1:property}', '${2:operator}', ${3:value})" },
 		{ "trigger": "Laravel: whereHas", "contents": "whereHas('${1:property}', function(\\$$1)\n{\n\t\\$$1->$0;\n})" },
 
+		// Collections
+		{ "trigger": "Laravel: contains", "contents": "contains(${1:key})" },
+		{ "trigger": "Laravel: each", "contents": "each(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: sortBy", "contents": "sortBy(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: toJson", "contents": "toJson()" },
+		{ "trigger": "Laravel: toJson", "contents": "toJson()" },
+
 		// Schema
 		{ "trigger": "Laravel: $table->bigIncrements", "contents": "\\$table->bigIncrements('${1:name}')" },
 		{ "trigger": "Laravel: $table->bigInteger", "contents": "\\$table->bigInteger('${1:name}')" },
