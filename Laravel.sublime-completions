@@ -45,6 +45,9 @@
 		// Filter
 		{ "trigger": "Laravel: after", "contents": "after('${1:path}')" },
 		{ "trigger": "Laravel: before", "contents": "before('${1:path}')" },
+		// DB
+		{ "trigger": "Laravel: DB::getQueryLog", "contents": "DB::getQueryLog()" },
+
 
 		// Helpers
 		{ "trigger": "Laravel: dd", "contents": "dd($1);" }
