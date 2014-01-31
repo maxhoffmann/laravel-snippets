@@ -31,7 +31,7 @@
 		{ "trigger": "Laravel: Form::open", "contents": "Form::open(${1/(?:.+)/[/g}${1:options}${1/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::model", "contents": "Form::model(${1:\\$model}${2/(?:.+)/, [/g}${2:options}${2/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::label", "contents": "Form::label('${1:field}'${2/(?:.+)/, '/g}${2:label}${2/(?:.+)/'/g}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
-		{ "trigger": "Laravel: Form::text", "contents": "Form::text('${1:name}'${2/(?:.+)/, '/g}${2:value}${3/(?:.+)/, [/g}${2/(?:.+)/'/g}${3:attributes}${3/(?:.+)/]/g})" },
+		{ "trigger": "Laravel: Form::text", "contents": "Form::text('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::password", "contents": "Form::password('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, [/g}${3:attributes}${3/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::checkbox", "contents": "Form::checkbox('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, /g}${3:true}${4/(?:.+)/, [/g}${4:attributes}${4/(?:.+)/]/g})" },
 		{ "trigger": "Laravel: Form::radio", "contents": "Form::radio('${1:name}'${2/(?:.+)/, '/g}${2:value}${2/(?:.+)/'/g}${3/(?:.+)/, /g}${3:true}${4/(?:.+)/, [/g}${4:attributes}${4/(?:.+)/]/g})" },
