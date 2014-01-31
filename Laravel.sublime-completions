@@ -147,7 +147,15 @@
 		{ "trigger": "Laravel: $table->dropIndex", "contents": "\\$table->dropIndex('${1:index}');" },
 
 		// Auth
+		{ "trigger": "Laravel: Auth::attempt()", "contents": "Auth::attempt([${1:credentials}]${2:, true})" },
+		{ "trigger": "Laravel: Auth::check()", "contents": "Auth::check()" },
+		{ "trigger": "Laravel: Auth::login()", "contents": "Auth::login(${1:\\$user})" },
+		{ "trigger": "Laravel: Auth::loginUsingId()", "contents": "Auth::loginUsingId(${1:id})" },
+		{ "trigger": "Laravel: Auth::logout()", "contents": "Auth::logout()" },
+		{ "trigger": "Laravel: Auth::once()", "contents": "Auth::once([${1:credentials}])" },
 		{ "trigger": "Laravel: Auth::user()", "contents": "Auth::user()" },
+		{ "trigger": "Laravel: Auth::validate()", "contents": "Auth::validate([${1:credentials}])" },
+		{ "trigger": "Laravel: Auth::viaRemember()", "contents": "Auth::viaRemember()" },
 
 		// Helpers
 		{ "trigger": "Laravel: dd", "contents": "dd($1);" }
