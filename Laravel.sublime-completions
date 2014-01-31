@@ -97,6 +97,19 @@
 		{ "trigger": "Laravel: toJson", "contents": "toJson()" },
 		{ "trigger": "Laravel: toJson", "contents": "toJson()" },
 
+		// Model Events
+		{ "trigger": "Laravel: creating", "contents": "creating(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: created", "contents": "created(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: updating", "contents": "updating(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: updated", "contents": "updated(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: saving", "contents": "saving(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: saved", "contents": "saved(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: deleting", "contents": "deleting(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: deleted", "contents": "deleted(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: restoring", "contents": "restoring(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: restored", "contents": "restored(function(\\$${1:item})\n{\n\t$0\n})" },
+		{ "trigger": "Laravel: observe", "contents": "observe(${1:Observer})" },
+
 		// Schema
 		{ "trigger": "Laravel: $table->bigIncrements", "contents": "\\$table->bigIncrements('${1:name}')" },
 		{ "trigger": "Laravel: $table->bigInteger", "contents": "\\$table->bigInteger('${1:name}')" },
@@ -133,6 +146,8 @@
 		{ "trigger": "Laravel: $table->dropUnique", "contents": "\\$table->dropUnique('${1:index}');" },
 		{ "trigger": "Laravel: $table->dropIndex", "contents": "\\$table->dropIndex('${1:index}');" },
 
+		// Auth
+		{ "trigger": "Laravel: Auth::user()", "contents": "Auth::user()" },
 
 		// Helpers
 		{ "trigger": "Laravel: dd", "contents": "dd($1);" }
