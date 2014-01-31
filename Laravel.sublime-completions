@@ -142,6 +142,7 @@
 		{ "trigger": "Laravel: index()", "contents": "index()" },
 		{ "trigger": "Laravel: $table->foreign", "contents": "\\$table->foreign('${1:field}')->references('${2:other_field}')->on('${3:other_table}')" },
 		{ "trigger": "Laravel: onDelete", "contents": "onDelete('${1:cascade|set null}')" },
+		{ "trigger": "Laravel: onUpdate", "contents": "onUpdate('${1:cascade|set null}')" },
 		{ "trigger": "Laravel: $table->dropPrimary", "contents": "\\$table->dropPrimary('${1:index}');" },
 		{ "trigger": "Laravel: $table->dropUnique", "contents": "\\$table->dropUnique('${1:index}');" },
 		{ "trigger": "Laravel: $table->dropIndex", "contents": "\\$table->dropIndex('${1:index}');" },
