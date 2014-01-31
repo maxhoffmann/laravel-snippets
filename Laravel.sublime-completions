@@ -45,6 +45,42 @@
 		// DB
 		{ "trigger": "Laravel: DB::getQueryLog", "contents": "DB::getQueryLog()" },
 
+		// Schema
+		{ "trigger": "Laravel: $table->bigIncrements", "contents": "\\$table->bigIncrements('${1:name}')" },
+		{ "trigger": "Laravel: $table->bigInteger", "contents": "\\$table->bigInteger('${1:name}')" },
+		{ "trigger": "Laravel: $table->binary", "contents": "\\$table->binary('${1:name}')" },
+		{ "trigger": "Laravel: $table->boolean", "contents": "\\$table->boolean('${1:name}')" },
+		{ "trigger": "Laravel: $table->date", "contents": "\\$table->date('${1:name}')" },
+		{ "trigger": "Laravel: $table->dateTime", "contents": "\\$table->dateTime('${1:name}')" },
+		{ "trigger": "Laravel: $table->decimal", "contents": "\\$table->decimal('${1:name}', ${2:presision (int)}, ${3:scale (int)})" },
+		{ "trigger": "Laravel: $table->double", "contents": "\\$table->double('${1:name}', ${2:presision (int)}, ${3:scale (int)})" },
+		{ "trigger": "Laravel: $table->engine", "contents": "\\$table->engine = '${1:InnoDB}';" },
+		{ "trigger": "Laravel: $table->enum", "contents": "\\$table->enum('${1:name}', ['${2:option1}'])" },
+		{ "trigger": "Laravel: $table->float", "contents": "\\$table->float('${1:name})" },
+		{ "trigger": "Laravel: $table->increments", "contents": "\\$table->increments('${1:name}')" },
+		{ "trigger": "Laravel: $table->integer", "contents": "\\$table->integer('${1:name}')" },
+		{ "trigger": "Laravel: $table->longText", "contents": "\\$table->longText('${1:name}')" },
+		{ "trigger": "Laravel: $table->mediumText", "contents": "\\$table->mediumText('${1:name}')" },
+		{ "trigger": "Laravel: $table->morphs", "contents": "\\$table->morphs('${1:name}')" },
+		{ "trigger": "Laravel: $table->smallInteger", "contents": "\\$table->smallInteger('${1:name}')" },
+		{ "trigger": "Laravel: $table->softDeletes", "contents": "\\$table->softDeletes();" },
+		{ "trigger": "Laravel: $table->string", "contents": "\\$table->string('${1:name}')" },
+		{ "trigger": "Laravel: $table->text", "contents": "\\$table->text('${1:name}')" },
+		{ "trigger": "Laravel: $table->time", "contents": "\\$table->time('${1:name}')" },
+		{ "trigger": "Laravel: $table->timestamp", "contents": "\\$table->timestamp('${1:name}')" },
+		{ "trigger": "Laravel: $table->timestamps", "contents": "\\$table->timestamps();" },
+		{ "trigger": "Laravel: nullable()", "contents": "nullable()" },
+		{ "trigger": "Laravel: default()", "contents": "default(${1:value})" },
+		{ "trigger": "Laravel: unsigned()", "contents": "unsigned()" },
+		{ "trigger": "Laravel: primary()", "contents": "primary()" },
+		{ "trigger": "Laravel: unique()", "contents": "unique()" },
+		{ "trigger": "Laravel: index()", "contents": "index()" },
+		{ "trigger": "Laravel: $table->foreign", "contents": "\\$table->foreign('${1:field}')->references('${2:other_field}')->on('${3:other_table}')" },
+		{ "trigger": "Laravel: onDelete", "contents": "onDelete('${1:cascade|set null}')" },
+		{ "trigger": "Laravel: $table->dropPrimary", "contents": "\\$table->dropPrimary('${1:index}');" },
+		{ "trigger": "Laravel: $table->dropUnique", "contents": "\\$table->dropUnique('${1:index}');" },
+		{ "trigger": "Laravel: $table->dropIndex", "contents": "\\$table->dropIndex('${1:index}');" },
+
 
 		// Helpers
 		{ "trigger": "Laravel: dd", "contents": "dd($1);" }
