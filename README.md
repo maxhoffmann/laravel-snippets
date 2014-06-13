@@ -1,7 +1,7 @@
 laravel-snippets
 ===================
 
-Sublime Text Snippets for Laravel
+Laravel completions for Sublime Text
 
 
 LICENSE
